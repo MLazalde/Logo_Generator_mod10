@@ -33,7 +33,8 @@ inquirer
     {
       //prompt: shape color
       type: "list",
-      message: ["Blue", "Red", "Green", "Yellow"],
+      message: "Choose a color for the shape",
+      choices: ["Blue", "Red", "Green", "Yellow"],
       name: "shapeColor",
     },
   ])
