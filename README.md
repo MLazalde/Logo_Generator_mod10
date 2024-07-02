@@ -27,7 +27,7 @@ Run the script using '''node index.js'''
 
 Run npm i to install the required dependencies: fs (Node.js built-in file system module) and inquirer (for interactive prompts).
 
-[Untitled_ Jun 25, 2024 10_43 PM (1).webm]()
+[Screencastify Video link](https://drive.google.com/file/d/1bn8GGqKqCMxqtuxMoMGdylVlkyoq-Sw6/view?usp=sharing)
 
 ## License
 
