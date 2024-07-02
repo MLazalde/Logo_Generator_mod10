@@ -14,7 +14,9 @@ inquirer
     {
       type: "input",
       message: "Enter 3 letters for your logo text",
-      name: "logoText",
+      name: "text",
+      validate: (input) =>
+        input.length <= 3 || "Please enter up to 3 characters.",
     },
     {
       //prompt: text color
@@ -41,10 +43,6 @@ inquirer
   .then((answers) => {
     let data = generateSVG(answers);
     fs.writeFile("logo.svg", data, (err) => {
-      err
-        ? console.log(err)
-        : console.log("Your logo was created successfully!");
+      err ? console.log(err) : console.log(answers);
     });
   });
-
-//return a logo.svg file
